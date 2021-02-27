@@ -8,16 +8,16 @@
 #include "vector"
 #include "map"
 
-namespace Blackjack{
+namespace BlackJack{
     class Hand{
     public:
         Hand();
 
-        std::vector<Blackjack::Card> cards;
+        std::vector<BlackJack::Card> cards;
         int value;
         int aces;
 
-        void add_card(Blackjack::Card, std::map <std::string, int>);
+        void add_card(BlackJack::Card, std::map <std::string, int>);
         void adjust_for_ace();
     };
 }
