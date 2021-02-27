@@ -1,7 +1,30 @@
-#include "iostream"
-#include "string"
-#include "map"
-#include "vector"
+#include "BlackJack/Deck.h"
+#include "BlackJack/Hand.h"
+#include <iostream>
+#include <string>
+#include <vector>
+#include <map>
+#include <typeinfo>
+
+void player_busts(BlackJack::Hand hand_player, BlackJack::Hand hand_dealer)
+{
+    std::cout << "\nBUST PLAYER";
+}
+
+void player_wins(BlackJack::Hand hand_player, BlackJack::Hand hand_dealer)
+{
+    std::cout << "\nPLAYER WINS!";
+}
+
+void dealer_busts(BlackJack::Hand hand_player, BlackJack::Hand hand_dealer)
+{
+    std::cout << "\nPLAYER WINS! DEALER BUSTED!";
+}
+
+void dealer_wins(BlackJack::Hand hand_player, BlackJack::Hand hand_dealer)
+{
+    std::cout << "\nDEALER WINS!";
+}
 
 
 int main()
