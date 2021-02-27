@@ -7,14 +7,14 @@
 #include "vector"
 
 BlackJack::Deck::Deck()
-    : deck{std::vector <BlackJack::Card{}>}
+    : deck{std::vector <BlackJack::Card>{}}
 {}
 
 void BlackJack::Deck::print_deck()
 {
     std::string deck_comp = {""};
 
-    for (size_t i = 0; deck.size() < ; ++i) {
+    for (size_t i = 0; i < deck.size(); ++i) {
         deck_comp += "\n " + deck[i].card_to_string();
     }
     std::cout << "The deck has: " << deck_comp;
@@ -26,7 +26,7 @@ void BlackJack::Deck::shuffle()
     std::shuffle(std::begin(deck), std::end(deck), std::default_random_engine(seed));
 }
 
-Card BlackJack::Deck::deal()
+auto BlackJack::Deck::deal() -> Card
 {
     Card single_card = deck.back();
     deck.pop_back();
