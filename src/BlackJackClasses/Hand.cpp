@@ -12,9 +12,9 @@ BlackJack::Hand::Hand()
 
 void BlackJack::Hand::add_card(Card card, std::map <std::string, int> values)
 {
-    card.push_back(card);
+    cards.push_back(card);
     value = value + values[card.rank];
-    if(card.rank == "Ace")
+    if (card.rank == "Ace")
     {
         aces += 1;
     }
@@ -28,4 +28,3 @@ void BlackJack::Hand::adjust_for_ace()
         aces -= 1;
     }
 }
-
