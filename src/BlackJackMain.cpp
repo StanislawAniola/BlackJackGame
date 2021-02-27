@@ -1,7 +1,10 @@
-#include "iostream"
-#include "string"
-#include "map"
-#include "vector"
+#include "BlackJack/Deck.h"
+#include "BlackJack/Hand.h"
+#include <iostream>
+#include <string>
+#include <vector>
+#include <map>
+#include <typeinfo>
 
 
 int main()
